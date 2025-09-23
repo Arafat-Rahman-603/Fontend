@@ -20,7 +20,7 @@ export default function App() {
                 <Home />
               </SignedIn>
               <SignedOut>
-                <div className="flex justify-center items-center">
+                <div className="flex mt-4 justify-center items-center">
                   <SignIn />
                 </div>
               </SignedOut>
