@@ -13,8 +13,8 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const baseUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
-      const res = await fetch(`${baseUrl}/send-email`, {
+      const baseUrl = "https://get-mail-backend.onrender.com";
+      const res = await fetch(`${baseUrl}/send`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
