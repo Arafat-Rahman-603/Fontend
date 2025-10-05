@@ -6,7 +6,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value ,app:"chatterly"});
+    setFormData({ ...formData, [e.target.name]: e.target.value ,app:"App:Chatterly"});
   };
 
   const handleSubmit = async (e) => {
