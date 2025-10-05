@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" ,app:"chatterly"});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
       const data = await res.json();
       if (data.success) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "" ,app:"chatterly"});
       } else {
         alert("Failed to send email.");
       }
